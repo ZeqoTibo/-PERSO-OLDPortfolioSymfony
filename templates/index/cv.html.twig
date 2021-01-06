@@ -1,0 +1,35 @@
+{% extends 'index/base.html.twig' %}
+
+{% block title %}
+    Mon CV ~ Thbault DEROUIN
+{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('Css/StyleCv.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="item Entete">
+
+        </div>
+
+        <div class="item nav_topPDF">
+            <ul id="nav">
+                <li><a class="like" href="{{ path('profile') }}">Mon profil</a></li>
+                <li><a class="like" href="{{ path('projets') }}">Mes projets</a></li>
+                <li><a class="like" href="#">Mon CV</a></li>
+                <li><a class="like" href="#">Me contacter</a></li>
+            </ul>
+        </div>
+
+
+        <div class="itempdf corp">
+            <iframe class="pdf" src="Img/thibault.pdf" width="99.5%" height="1200"></iframe>
+        </div>
+
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+    </div>
+{% endblock %}

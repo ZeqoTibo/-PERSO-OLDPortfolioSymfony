@@ -1,0 +1,95 @@
+{% extends 'index/base.html.twig' %}
+
+{% block title %}
+    Mes projets ~ Thbault DEROUIN
+{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('Css/StyleProjet.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="item Entete">
+
+        </div>
+
+        <div class="item nav_top">
+            <ul id="nav">
+                <li><a class="like" href="{{ path('profile') }}">Mon profil</a></li>
+                <li><a class="like" href="#">Mes projets</a></li>
+                <li><a class="like" href="{{ path('cv') }}">Mon CV</a></li>
+                <li><a class="like" href="#">Me contacter</a></li>
+            </ul>
+        </div>
+        <div class="item corp">
+
+            <div class="sousContainerGH">
+                <div class="texte">
+                    <h4>Projet n°1 : Site internet sur le handicap dans l'informatique</h4>
+                </div>
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <img src="Img/P1Site.png" style="width:100%;">
+                    </div>
+                    <div class="mySlides">
+                        <img src="Img/outilsSite.PNG" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+
+
+            <div class="sousContainerDH">
+                <div class="texte">
+                    <h4>Projet n°2 : Logiciel d'aide pour la compréhension orale d'une langue étrangère</h4>
+                </div>
+                <div class="slideshow-container2">
+                    <div class="mySlides2">
+                        <img src="Img/EnseLogiciel.PNG" style="width:100%;">
+                    </div>
+
+                    <div class="mySlides2">
+                        <img src="Img/EtuLogiciel.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides2">
+                        <img src="Img/EtuTestFaux.PNG" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                </div>
+            </div>
+
+            <div class="sousContainerB">
+                <div class="texte">
+                    <h4>Projet n°3 : Logiciel de simulation de pandémie</h4>
+                </div>
+                <div class="slideshow-container3">
+                    <div class="mySlides3">
+                        <img src="Img/AccueilSimulation.png" style="width:100%;">
+                    </div>
+
+                    <div class="mySlides3">
+                        <img src="Img/DiagDemo.PNG" style="width:100%">
+                    </div>
+
+                    <div class="mySlides3">
+                        <img src="Img/graphSimulation.PNG" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                </div>
+            </div>
+
+
+        </div>
+        {% block footer %}
+            {{ parent() }}
+        {% endblock %}
+
+        {% block javascripts %}
+            <script type="text/javascript" src="Css/Projet.js"></script>
+        {% endblock %}
+    </div>
+{% endblock %}
