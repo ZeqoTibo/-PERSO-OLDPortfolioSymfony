@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="{{ asset('Css/StyleProfil.css') }}">
 {% endblock %}
 
+
 {% block body %}
+
 
     <div class="container">
         <div class="item Entete">
@@ -19,11 +21,16 @@
                 <li><a class="like" href="#">Mon profil</a></li>
                 <li><a class="like" href="{{ path('projets') }}">Mes projets</a></li>
                 <li><a class="like" href="{{ path('cv') }}">Mon CV</a></li>
-                <li><a class="like" href="#">Me contacter</a></li>
+                <li><a class="like" href="{{ path('contacter') }}">Me contacter</a></li>
             </ul>
         </div>
 
         <div class="item corp">
+            {% for message in app.flashes ('message') %}
+                <div class="alert alert-message">
+                    {{message}}
+                </div>
+            {% endfor %}
             <div class="presentation">
                 <h3>
                     <svg class="svg-icon" viewBox="0 0 20 20">
@@ -112,8 +119,5 @@
 
             </div>
         </div>
-        {% block footer %}
-            {{ parent() }}
-        {% endblock %}
     </div>
 {% endblock %}

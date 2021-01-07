@@ -16,10 +16,10 @@
 
         <div class="item nav_topPDF">
             <ul id="nav">
-                <li><a class="like" href="{{ path('profile') }}">Mon profil</a></li>
+                <li><a class="like" href="{{ path('profil') }}">Mon profil</a></li>
                 <li><a class="like" href="{{ path('projets') }}">Mes projets</a></li>
                 <li><a class="like" href="#">Mon CV</a></li>
-                <li><a class="like" href="#">Me contacter</a></li>
+                <li><a class="like" href="{{ path('contacter') }}">Me contacter</a></li>
             </ul>
         </div>
 
@@ -27,9 +27,5 @@
         <div class="itempdf corp">
             <iframe class="pdf" src="Img/thibault.pdf" width="99.5%" height="1200"></iframe>
         </div>
-
-    {% block footer %}
-        {{ parent() }}
-    {% endblock %}
     </div>
 {% endblock %}

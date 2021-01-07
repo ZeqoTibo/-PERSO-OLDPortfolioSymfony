@@ -15,10 +15,10 @@
 
         <div class="item nav_top">
             <ul id="nav">
-                <li><a class="like" href="{{ path('profile') }}">Mon profil</a></li>
+                <li><a class="like" href="{{ path('profil') }}">Mon profil</a></li>
                 <li><a class="like" href="#">Mes projets</a></li>
                 <li><a class="like" href="{{ path('cv') }}">Mon CV</a></li>
-                <li><a class="like" href="#">Me contacter</a></li>
+                <li><a class="like" href="{{ path('contacter') }}">Me contacter</a></li>
             </ul>
         </div>
         <div class="item corp">
@@ -84,9 +84,7 @@
 
 
         </div>
-        {% block footer %}
-            {{ parent() }}
-        {% endblock %}
+
 
         {% block javascripts %}
             <script type="text/javascript" src="Css/Projet.js"></script>
