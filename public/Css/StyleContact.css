@@ -43,7 +43,7 @@ h3 {
     font-family: 'Comic Sans MS';
     font-size: 20px;
     border-radius: 10px;
-    padding: 20px 0 0 20px;
+    padding: 20px 0 5px 30px;
 }
 
 
@@ -68,13 +68,21 @@ h3 {
 }
 /*--------------------------POUR LE MENU DEROULANT------------------*/
 ul {
+    margin: 0;
+    padding: 0;
+    background-color: #324495;
+    text-align: center;
+    width: 95%;
+
+}
+#nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #324495;
     text-align: center;
-
+    width: 100%;
 }
 
 li {

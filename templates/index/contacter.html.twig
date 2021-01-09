@@ -1,0 +1,34 @@
+{% extends 'index/base.html.twig' %}
+
+{% block title %}
+    Me contacter ~ Thbault DEROUIN
+{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('Css/StyleContact.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="containerContacter">
+
+        <div class="item Entete">
+
+        </div>
+
+
+        <div class="item nav_top">
+            <ul id="nav">
+                <li><a class="like" href="{{ path('profil') }}">Mon profil</a></li>
+                <li><a class="like" href="{{ path('projets') }}">Mes projets</a></li>
+                <li><a class="like" href="{{ path('cv') }}">Mon CV</a></li>
+                <li><a class="like" href="#">Me contacter</a></li>
+            </ul>
+        </div>
+
+        <div class="item formulaire">
+            {{ form(contactForm) }}
+        </div>
+
+        <div class="item footer">
+        </div>
+
+    </div>
+{% endblock %}

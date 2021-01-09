@@ -52,6 +52,7 @@ class SitePersoController extends AbstractController
 
     public function contacter(Request $request, \Swift_Mailer $mailer)
     {
+
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
 
@@ -72,7 +73,6 @@ class SitePersoController extends AbstractController
             ;
             $mailer->send($message);
 
-            $this->addFlash('message','Le message est bien envoyé');
             return $this->redirectToRoute('profil');
         }
 

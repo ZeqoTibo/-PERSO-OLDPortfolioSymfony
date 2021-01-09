@@ -13,21 +13,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadf9873-8659-4340-a843-f550a187c5f1" name="Default Changelist" comment="Add all others pages after first commit">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sitePerso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sitePerso.iml" afterDir="false" />
+    <list default="true" id="aadf9873-8659-4340-a843-f550a187c5f1" name="Default Changelist" comment="Add all others pages after second commit">
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/validator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/emails/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index/contacter.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/Css/StyleContact.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Css/StyleContact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SitePersoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SitePersoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/cv.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/cv.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/projets.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/projets.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ContactType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +189,8 @@
       <option name="presentableId" value="Default" />
       <updated>1609959105332</updated>
       <workItem from="1609959107285" duration="12657000" />
-      <workItem from="1610044188190" duration="14842000" />
+      <workItem from="1610044188190" duration="14961000" />
+      <workItem from="1610116678502" duration="14782000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1609970970907</created>
@@ -199,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609971266048</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add all others pages after second commit">
+      <created>1610060801931</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610060801931</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,13 +234,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Add all others pages after first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all others pages after first commit" />
+    <MESSAGE value="Add all others pages after second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add all others pages after second commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="535" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610050138685">
+    <state x="535" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610126700551">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="535" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1610050138685" />
+    <state x="535" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1610126700551" />
+    <state x="246" y="194" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610126980504">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="246" y="194" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1610126980504" />
     <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610048131103">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -247,22 +266,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="647" y="315" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1609971397244" />
-    <state width="1493" height="209" key="GridCell.Tab.0.bottom" timestamp="1610048156334">
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom" timestamp="1610060837945">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1610048156334" />
-    <state width="1493" height="209" key="GridCell.Tab.0.center" timestamp="1610048156334">
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1610060837945" />
+    <state width="1493" height="209" key="GridCell.Tab.0.center" timestamp="1610060837944">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1610048156334" />
-    <state width="1493" height="209" key="GridCell.Tab.0.left" timestamp="1610048156333">
+    <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1610060837944" />
+    <state width="1493" height="209" key="GridCell.Tab.0.left" timestamp="1610060837944">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1610048156333" />
-    <state width="1493" height="209" key="GridCell.Tab.0.right" timestamp="1610048156334">
+    <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1610060837944" />
+    <state width="1493" height="209" key="GridCell.Tab.0.right" timestamp="1610060837944">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1610048156334" />
+    <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1610060837944" />
     <state x="576" y="140" key="NewPhpClassDialog" timestamp="1609959869509">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -271,22 +290,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1609967294167" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1609971230248">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1610060818275">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1609971230248" />
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609971009378">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1610060818275" />
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610060728342">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1609971009378" />
-    <state x="425" y="189" width="672" height="677" key="run.anything.popup" timestamp="1610047841843">
+    <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1610060728342" />
+    <state x="425" y="189" width="672" height="677" key="run.anything.popup" timestamp="1610145738166">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" width="672" height="677" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1610047841843" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1610046088180">
+    <state x="425" y="189" width="672" height="677" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1610145738166" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1610145746174">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1610046088180" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1610145746174" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
