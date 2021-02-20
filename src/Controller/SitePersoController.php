@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 
+use App\Entity\Contact;
 use App\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,6 +13,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SitePersoController extends AbstractController
 {
+
+
 
     /**
      * @Route("/", name="profil", methods={"GET"})
@@ -53,14 +56,21 @@ class SitePersoController extends AbstractController
     public function contacter(Request $request, \Swift_Mailer $mailer)
     {
 
-        $form = $this->createForm(ContactType::class);
+        $ctct = new Contact();
+
+
+        $form = $this->createForm(ContactType::class, $ctct);
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid()){
-            $contact = $form->getData();
 
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($ctct);
+            $em->flush();
+
+            $contact = $form->getData();
             $message = (new \Swift_Message('Nouveau contact'))
-                ->setFrom($contact['email'])
+                ->setFrom('emailtest@gmail.com')
 
                 ->setTo('zeqostream@gmail.com')
 
